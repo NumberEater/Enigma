@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'enigma.Main'
+
+repositories {
+    mavenCentral()
+}
+
+tasks {
+    run {
+        standardInput = System.in
+    }
+}
+
+jar {
+    archiveBaseName = 'gs-gradle'
+    archiveVersion =  '0.1.0'
+}
